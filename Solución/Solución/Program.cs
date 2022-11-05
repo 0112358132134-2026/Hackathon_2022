@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Solución
 {
     class Program
@@ -15,27 +14,26 @@ namespace Solución
                     Console.WriteLine("MENÚ");
                     Console.WriteLine("-----------------------------------------------");
                     Console.WriteLine("1: Scramble");
-                    Console.WriteLine("2:");
-                    Console.WriteLine("3:");
+                    Console.WriteLine("2: Justificador de Texto");
+                    Console.WriteLine("3: Cadenas Subsecuentes");
                     Console.WriteLine("4: Abuela Binaria");
                     Console.WriteLine("5: Salir");
                     Console.WriteLine("-----------------------------------------------");
                     Console.WriteLine("Ingrese el número del problema que desea ver...");
-                    string texto = Console.ReadLine();
-                    int opcion = 0;
+                    string opcionTexto = Console.ReadLine();
                     try
                     {
-                        opcion = Int32.Parse(texto);
+                        int opcion = Int32.Parse(opcionTexto);
                         if (opcion >= 1 && opcion <= 5) {
                             opcionVaida = true;
                             Console.Clear();
                             switch (opcion) {
                                 case 1:
                                     Console.WriteLine("Ingrese la cadena 1: ");
-                                    string cadena1 = Console.ReadLine().ToLower();
+                                    string cadena_1 = Console.ReadLine().ToLower();
                                     Console.WriteLine("Ingrese la cadena 2: ");
-                                    string cadena2 = Console.ReadLine().ToLower();
-                                    if (_funciones.Scramble(cadena1, cadena2)) {
+                                    string cadena_2 = Console.ReadLine().ToLower();
+                                    if (_funciones.Scramble(cadena_1, cadena_2)) {
                                         Console.WriteLine("¡La cadade 2 es una subcadena de la cadena 1!");
                                     }
                                     else {

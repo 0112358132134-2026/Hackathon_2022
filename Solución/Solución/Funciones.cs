@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Solución
 {
     class Funciones
@@ -23,6 +22,16 @@ namespace Solución
                 }
             }
             return true;
+        }
+
+        public string CadenasSubsecuentes(string cadena_1, string cadena_2) {
+
+            for (int i = 0; i < cadena_1.Length; i++) {
+                if (cadena_2.Contains(cadena_1[i])){
+
+                }
+            }
+            return "vacío";
         }
 
         public int AbuelaBinaria(int N, int numero_1, int numero_2) {
